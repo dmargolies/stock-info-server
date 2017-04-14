@@ -10,6 +10,7 @@ class CreateStocks < ActiveRecord::Migration[5.0]
       t.string :sector
       t.string :industry
       t.string :summary_quote
+      t.string :exchange
       t.timestamps
     end
   end

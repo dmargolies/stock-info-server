@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20170414155747) do
     t.string   "sector"
     t.string   "industry"
     t.string   "summary_quote"
+    t.string   "exchange"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
