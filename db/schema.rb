@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20170414155747) do
     t.string   "exchange"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.index ["name"], name: "index_stocks_on_name"
+    t.index ["symbol"], name: "index_stocks_on_symbol"
   end
 
 end

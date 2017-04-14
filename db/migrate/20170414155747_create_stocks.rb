@@ -13,5 +13,7 @@ class CreateStocks < ActiveRecord::Migration[5.0]
       t.string :exchange
       t.timestamps
     end
+    add_index :stocks, :symbol
+    add_index :stocks, :name
   end
 end

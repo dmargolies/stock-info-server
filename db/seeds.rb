@@ -18,7 +18,7 @@ options = {
 }
 exchanges.each do |exchange|
   file = __dir__ + "/" + exchange + ".csv"
-  puts file
+  puts "importing: " + file
   SmarterCSV.process(file, options) do |array|
     stock = array.first #not chunked, array has 1 element
     stock[:exchange] = exchange
