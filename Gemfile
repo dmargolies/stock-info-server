@@ -40,4 +40,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'smarter_csv'
+gem 'smarter_csv', '~> 1.1.4'
+
+gem 'active_model_serializers', '~> 0.10.0'
+
+gem 'yahoo-finance', '~> 1.2.1'
